@@ -1,5 +1,144 @@
-img {
-  width: 100%;
-  height: 1000px;
-  object-fit: cover;
+.restaurants .bloccarte img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+  }
+@media (max-width: 2560px) and (min-width: 767px) {
+    footer {
+      background-color: #353535;
+      padding-top: 2%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+footer h4 {
+    font-family: Shrikhand, "cursive";
+    font-size: 1.2em;
+    color: #fff;
+    margin-left: 9%;
+  }
+  ul {
+    list-style: none;
+    color: white;
+    margin-left: 10%;
 }
+ul li {
+    margin-bottom: 7%;
+  }
+  ul li a {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (max-width: 425px) {
+    footer {
+      background-color: #353535;
+      padding-bottom: 3%;
+      padding-top: 2%;
+    }
+    footer h4 {
+      font-family: Shrikhand, "cursive";
+      font-size: 1.2em;
+      color: #fff;
+      margin-left: 9%;
+    }
+  
+    ul {
+      list-style: none;
+      color: white;
+    }
+    ul li {
+      margin-bottom: 3%;
+    }
+    ul li a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  @media (max-width: 2560px) {
+    .btn {
+      flex-wrap: nowrap;
+      width: 20%;
+      padding: 1%;
+      font-size: 1.3em;
+      border-radius: 30px;
+      background: linear-gradient(#FF79DA, #9356DC);
+      box-shadow: 0.25rem 0.25rem 10px #3535358a;
+      color: #fff;
+      border: none;
+      transition: 400ms;
+    }
+    .btn:hover {
+      background: linear-gradient(#ff93e1, #a16be0);
+      box-shadow: 0.25rem 0.25rem 10px black;
+    }
+    .commander {
+        width: 25%;
+        margin-left: 37.5%;
+        padding: 3%;
+        border-radius: 30px;
+        background: linear-gradient(#FF79DA, #9356DC);
+        box-shadow: 0.25rem 0.25rem 10px #3535358a;
+        color: #fff;
+        border: none;
+        justify-content: center;
+        transition: 400ms;
+      }
+      .commander:hover {
+        background: linear-gradient(#ff93e1, #a16be0);
+        box-shadow: 0.25rem 0.25rem 10px black;
+      }
+    }
+    @media (max-width: 1024px) {
+        .btn {
+            width: 40%;
+            padding: 2%;
+        }
+        .commander {
+            font-size: 1.2em;
+        }
+    }
+    @media(max-width: 425px) {
+        .btn{
+            width: 85%;
+            padding: 5%;
+            font-size: 1em;
+            border-radius: 30px;
+            background: linear-gradient(#FF79DA,#9356DC);
+            box-shadow: 0.25rem 0.25rem  10px #3535358a;
+            color: #fff;
+            border: none;
+            transition: 400ms;
+        }
+        .btn:hover {
+            background: linear-gradient(#ff93e1, #a16be0);
+            box-shadow: 0.25rem 0.25rem 10px black;
+        }
+        .commander {
+            width: 50%;
+            margin-left: 25%;
+            padding: 5%;
+            border-radius: 30px;
+            background: linear-gradient(#FF79DA, #9356DC);
+            box-shadow: 0.25rem 0.25rem 10px #3535358a;
+            color: #fff;
+            border: none;
+            justify-content: center;
+            transition: 400ms;
+        }
+        .commander:hover {
+            background: linear-gradient(#ff93e1, #a16be0);
+            box-shadow: 00.25rem 0.25rem 10px black;
+        }
+    }
+
+   
+    /*Animation fond du loader*/
+    @keyframes loadbg {
+        100% {
+            opacity: 0;
+            z-index: -1;
+        }
+    }
