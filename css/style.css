@@ -134,11 +134,378 @@ ul li {
         }
     }
 
-   
     /*Animation fond du loader*/
+
     @keyframes loadbg {
         100% {
             opacity: 0;
             z-index: -1;
         }
     }
+    @media (max-width: 2560px) {
+        html body {
+            font-family: Roboto, sans-serif;
+        } 
+        html body h1 {
+            font-family: "Shrinkhand", cursive;
+            display: flex;
+            justify-content: center;
+        }
+        html body h2 {
+            margin-left 5%; 
+        }
+        html body .containerloader {
+            position: fixed;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fffffff2;
+            animation: loadbg 0.1s;
+            animation-delay: 2.9s;
+            animation-fill-mode: both;
+        }
+        /* Loader */
+        html body .containerloader .loader {
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #FF79DA;
+            border-bottom: 10px solid #9356DC;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            animation: spin 4s linear;
+            margin: auto;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .header__arrow{
+            font-size: 1.5rem;
+            color: #000;
+        }
+        .position {
+            display: flex;
+            justify-content: center;
+            font-size: 1.2em;
+            background-color: #eaeaea;
+        }
+        .position .local__icon {
+            display: flex;
+            align-items: center;
+            margin-right: 3%;
+        }
+        .headertxt {
+            text-align: center;
+            background-color: #f6f6f6;
+            padding: 2%;
+        }
+        .Fonctionnement {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .Fonctionnement ol {
+            list-style: none;
+            margin-right: 2%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .Fonctionnement ol li .chiffre {
+            background-color: #9356DC;
+            border-radius: 50%;
+            padding: 5px 8px 5px 8px;
+            margin-left: -18%;
+            margin-right: 10%;
+        }
+        .Fonctionnement ol li .tuto__icon {
+            margin-right: 5%;
+        }
+
+        .restaurants {
+            background-color: #f6f6f6;
+            padding-top: 1%;
+            padding-bottom: 2%;
+         }
+         .restaurants .containerresto {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: flex-start;
+             align-items: stretch;
+         }
+         .restaurants .bloccarte {
+             width: 40%;
+             border-radius: 15px;
+             margin-left: 4%;
+             margin-right: 4%;
+             margin-bottom: 5%;
+             box-shadow: 0.25rem 0.25rem 0.50rem gray;
+             position: relative;
+             z-index: 0;
+         }
+         .restaurants .bloccarte .carte {
+             text-decoration: none;
+         }
+         .restaurants .bloccarte img {
+             width: 100%;
+             height: 250px;
+             border-radius: 15px 15px 0px 0px;
+             object-fit: cover;
+         }
+         .restaurants .bloccarte .bloctxtcoeur {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: space-between;
+             align-items: center;
+             color: black;
+         }
+         .restaurants .bloccarte .bloctxtcoeur .txtimg {
+             line-height: 0.5em;
+             margin-left: 3%;
+         }
+          /*Heart & animation*/
+
+          .heart {
+              font-size: 2em;
+              margin-right: 8%;
+          }
+          .heart .coeurvide {
+              transition: 0.7s;
+              position: relative;
+              z-index: 2;
+          }
+          .heart .coeurvide {
+              position: absolute;
+              right: 8%;
+              z-index: 1;
+              opacity: 0;
+          }
+          
+          /*placement du input pour le coeur */
+          input {
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              opacity: 0;
+              cursor: pointer;
+              z-index: 3;
+          }
+          body {
+              background-color: #f6f6f6;
+          }
+          .headergout {
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              flex-direction: row;
+              flex-wrap: wrap;
+              margin-right: 15%;
+          } 
+
+          img {
+              width: 100%;
+              height: 1000px;
+              object-fit: cover;
+          }
+          .containerpalettegout {
+              background-color: #f6f6f6;
+              margin-top: -35%;
+              padding-bottom: 5%;
+              position: relative;
+              border-radius: 35px 35px 0px 0px;
+              box-shadow: 0.25rem 0.25rem 10px #3535358a;
+              opacity: 0.9;
+              width: 80%;
+              margin-left: 10%;
+          }
+          .containerpalettegout .TitreMenuPalette {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-direction: row;
+              flex-wrap: wrap;
+          }
+
+          .containerpalettegout .TitreMenuPalette h1 {
+              margin-left: 4%;
+              font-size: 1.7em;
+          }
+         .confirmation {
+             display: flex;
+             flex-direction: column;
+             justify-content: flex-end;
+             background-color: #99e2d0;
+             width: 30%;
+             border-radius: 0px 20px 20px 0px;
+             margin: -1rem -12rem -1rem -1rem;
+             padding-bottom: 3%;
+             padding-top: 3%;
+             align-items: center;
+         }
+         .confirmation div {
+             display: flex;
+             height: 40px;
+             width: 25%;
+             border-radius: 50%;
+             background-color: #fff;
+             flex-direction: row;
+             align-items: center;
+         }
+         .menu {
+             margin-bottom: 10%;
+         }
+         .menu .barre {
+             height: 3px;
+             width: 5%;
+             margin-left: 5%;
+             margin-top: -1%;
+             margin-bottom: 4%;
+             background-color: #99e2d0;
+         }
+         .menu h3 {
+             margin-left: 5%;
+             color: grey;
+         }
+         .containermenu {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: nowrap;
+             justify-content: space-between;
+             align-items: center;
+             overflow: hidden;
+             background-color: #fff;
+             border-radius: 20px;
+             box-shadow: 00.25rem 0.25rem 0.5rem grey;
+             width: 60%;
+             margin-left: 5%;
+             margin-bottom: 5%;
+             opacity: 0;
+         }
+         .containermenu .tktmenu {
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             margin-left: 3%;
+             line-height: 0.5;
+             width: 80%;
+         }
+         .containermenu .prix {
+             margin-left: 15rem;
+             margin-top: 0;
+             width: 20%;
+         }
+    }
+    @media (max-width: 1024px) {
+        .containerloader {
+            position: fixed;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            background-color: #fffffff2;
+            /* ani */
+        }
+         /* loader */
+        .containerloader .loader {
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #FF79DA;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        body {
+            margin: 0;
+        }
+        .header__arrow {
+            font-size: 1.5rem;
+            color: #000;
+        }
+        img {
+            height: 800px;
+        }
+        .containerpalettegout {
+            width: 100%;
+            margin-left: 0%;
+        }
+        .Fonctionnement {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .Fonctionnement ol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .Fonctionnement .TU {
+            list-style: none;
+            width: 30%;
+            margin-bottom: 7%;
+        }
+        .Fonctionnement .TU .chiffre {
+            margin-left: -13%;
+        }
+    }
+    @media (max-width: 425px) {
+        html body {
+            font-family: Roboto, sans-serif;
+        }
+        html body h2 {
+            margin-left: 6%;
+        }
+        html body .containerloader{
+            position: fixed;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fffffff2;
+        }
+        html body .containerloader .loader {
+             /* Création du loader */
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #FF79DA;
+            border-bottom: 10px solid #9356DC;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            /* placement du loader au milieu de la page */
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;    
+        }
+        .position {
+            display: flex;
+            justify-content: center;
+            font-size: 1.2em;
+            background-color: #eaeaea;
+        }
+        .position .local__icon {
+            display: flex;
+            align-items: center;
+            margin-right: 3%;
+
+        }
+    }
+
+    
