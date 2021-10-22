@@ -1,10 +1,4 @@
 @charset "UTF-8"
-.restaurants .bloccarte img {
-    width: 100%;
-    height: 250px;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-  }
 @media (max-width: 2560px) and (min-width: 767px) {
     footer {
       background-color: #353535;
@@ -145,10 +139,10 @@ ul li {
     }
     @media (max-width: 2560px) {
         html body {
-            font-family: Roboto, sans-serif;
+            font-family: sh;
         } 
         html body h1 {
-            font-family: "Shrinkhand", cursive;
+            font-family: Shrikhand;
             display: flex;
             justify-content: center;
         }
