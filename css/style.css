@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 @media (max-width: 2560px) and (min-width: 767px) {
     footer {
       background-color: #353535;
@@ -129,7 +129,7 @@ ul li {
         }
     }
 
-    /*Animation fond du loader*/
+    /*Animation of the loader*/
 
     @keyframes loadbg {
         100% {
@@ -139,10 +139,10 @@ ul li {
     }
     @media (max-width: 2560px) {
         html body {
-            font-family: sh;
+            font-family: Roboto,sans-serif;
         } 
         html body h1 {
-            font-family: Shrikhand;
+            font-family: "shrikhnad", cursive;
             display: flex;
             justify-content: center;
         }
@@ -212,6 +212,13 @@ ul li {
             flex-direction: row;
             justify-content: space-between;
         }
+        .Fonctionnement ol li {
+            width: 22.5%;
+            padding: 3%;
+            background-color: #f6f6f6;
+            border-radius: 20px;
+            box-shadow: 0.25rem 0.25rem 0.50rem gray;
+        }
         .Fonctionnement ol li .chiffre {
             background-color: #9356DC;
             border-radius: 50%;
@@ -243,6 +250,17 @@ ul li {
              box-shadow: 0.25rem 0.25rem 0.50rem gray;
              position: relative;
              z-index: 0;
+         }
+         .restaurants .bloccarte .news {
+             position: absolute;
+             top: 5%;
+             right: 4%;
+             background-color: #99e2d0;
+             color: #32b091;
+             height: 17px;
+             width: 20%;
+             text-align: center;
+             padding: 2%;
          }
          .restaurants .bloccarte .carte {
              text-decoration: none;
@@ -276,7 +294,7 @@ ul li {
               position: relative;
               z-index: 2;
           }
-          .heart .coeurvide {
+          .heart .coeurplein {
               position: absolute;
               right: 8%;
               z-index: 1;
@@ -339,11 +357,12 @@ ul li {
              background-color: #99e2d0;
              width: 30%;
              border-radius: 0px 20px 20px 0px;
-             margin: -1rem -12rem -1rem -1rem;
+             margin: -1rem -12rem -1rem 1rem;
              padding-bottom: 3%;
              padding-top: 3%;
              align-items: center;
          }
+         
          .confirmation div {
              display: flex;
              height: 40px;
@@ -352,7 +371,11 @@ ul li {
              background-color: #fff;
              flex-direction: row;
              align-items: center;
+             justify-content: center;
          }
+         .confirmation div i {
+            color: #99e2d0;
+        }
          .menu {
              margin-bottom: 10%;
          }
@@ -377,11 +400,11 @@ ul li {
              overflow: hidden;
              background-color: #fff;
              border-radius: 20px;
-             box-shadow: 00.25rem 0.25rem 0.5rem grey;
+             box-shadow: 0.25rem 0.25rem 0.5rem grey;
              width: 60%;
              margin-left: 5%;
              margin-bottom: 5%;
-             opacity: 0;
+             
          }
          .containermenu .tktmenu {
              white-space: nowrap;
@@ -413,6 +436,7 @@ ul li {
         .containerloader .loader {
             border: 10px solid #f3f3f3;
             border-top: 10px solid #FF79DA;
+            border-bottom: 10px solid #9356DC;
             border-radius: 50%;
             width: 100px;
             height: 100px;
@@ -625,11 +649,22 @@ ul li {
             flex-direction: row;
             flex-wrap: wrap;
         }
+        .containerpalettegout .TitreMenuPalette h1 {
+            margin-left: 4%;
+            font-size: 1.5em;
+        }
 
         .containerpalettegout .TitreMenuPalette .heart {
             margin-right: 6%;
             font-size: 1.5em;
         }
+
+        .containerpalettegout .TitreMenuPalette .heart .coeurvide2 {
+            transition: 0.7s;
+            position: relative;
+            right: 37%;
+            z-index: 2;
+          }
         .confirmation {
             width: 35%;
             border-radius: 0px 20px 20px 0px;
@@ -666,6 +701,10 @@ ul li {
            margin-top: -5%;
            background-color: #99e2d0;
        }
+       .containermenu {
+           width: 90%;
+           height: 70px;
+       }
        .containermenu .txtmenu {
            width: 100%;
        }
@@ -689,6 +728,10 @@ ul li {
            margin-right: 2rem;
            display: flex;
            justify-content: flex-end;
+       }
+       .logo {
+           height: 100px;
+           width: 100px;
        }
 
 
