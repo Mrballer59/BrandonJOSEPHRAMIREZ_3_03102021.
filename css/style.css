@@ -8,7 +8,7 @@
       align-items: center;
       justify-content: center;
     }
-footer h4 {
+    footer h4  {
     font-family: Shrikhand, "cursive";
     font-size: 1.2em;
     color: #fff;
@@ -96,7 +96,7 @@ ul li {
         }
     }
     @media(max-width: 425px) {
-        .btn{
+        .btn {
             width: 85%;
             padding: 5%;
             font-size: 1em;
@@ -137,12 +137,34 @@ ul li {
             z-index: -1;
         }
     }
+        /* Animation du loader */
+    @keyframes spin {
+        0% {
+        transform: rotate(0deg);
+        }
+        100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        }
+    }
+    /* Animation apparition des menus */
+    @keyframes menuanim {
+        from {
+        transform: translateY(0);
+        opacity: 0;
+        }
+        to {
+        transform: translateY(-20px);
+        opacity: 1;
+        }
+    }
+
     @media (max-width: 2560px) {
         html body {
-            font-family: Roboto,sans-serif;
+            font-family: 'Roboto', sans-serif;
         } 
         html body h1 {
-            font-family: "shrikhnad", cursive;
+            font-family: 'Shrikhand', cursive;
             display: flex;
             justify-content: center;
         }
@@ -179,7 +201,7 @@ ul li {
             right: 0;
             bottom: 0;
         }
-        .header__arrow{
+        .header__arrow {
             font-size: 1.5rem;
             color: #000;
         }
@@ -300,7 +322,21 @@ ul li {
               z-index: 1;
               opacity: 0;
           }
-          
+          .heart input:checked ~ .coeurplein {
+              opacity: 1;
+              transition: 0.7s;
+                /*ON DEFINI UN BACKGROUND*/
+                background: -webkit-linear-gradient(#FF79DA, #9356DC);
+                /*ON MET LE BACKGROUND SUR LE TEXTE*/
+                -webkit-background-clip: text;
+                /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+                -webkit-text-fill-color: transparent;
+            }
+            .heart input:checked ~ .coeurvide {
+                transition: 0.7s;
+                opacity: 0;
+              }
+
           /*placement du input pour le coeur */
           input {
               position: absolute;
@@ -350,6 +386,18 @@ ul li {
               margin-left: 4%;
               font-size: 1.7em;
           }
+          /* Animation de la confirmation de menu */
+            .containermenu:hover .confirmation {
+              margin: 0rem;
+              transition: 0.5s;
+                }
+
+            /* Animation de l'icone dans la confirmation*/
+            .containermenu:hover i {
+            transform: rotate(-360deg);
+            transition: 0.5s;
+                }
+
          .confirmation {
              display: flex;
              flex-direction: column;
@@ -404,6 +452,8 @@ ul li {
              width: 60%;
              margin-left: 5%;
              margin-bottom: 5%;
+             opacity: 0;
+             animation: menuanim 400ms forwards;
              
          }
          .containermenu .tktmenu {
@@ -419,6 +469,45 @@ ul li {
              margin-top: 0;
              width: 20%;
          }
+         .delay-0 {
+            animation-delay: 0s;
+          }
+        
+          .delay-1 {
+            animation-delay: 1s;
+          }
+        
+          .delay-2 {
+            animation-delay: 2s;
+          }
+        
+          .delay-3 {
+            animation-delay: 3s;
+          }
+        
+          .delay-4 {
+            animation-delay: 4s;
+          }
+        
+          .delay-5 {
+            animation-delay: 5s;
+          }
+        
+          .delay-6 {
+            animation-delay: 6s;
+          }
+        
+          .delay-7 {
+            animation-delay: 7s;
+          }
+        
+          .delay-8 {
+            animation-delay: 8s;
+          }
+        
+          .delay-9 {
+            animation-delay: 9s;
+          }
     }
     @media (max-width: 1024px) {
         .containerloader {
@@ -430,7 +519,10 @@ ul li {
             align-items: center;
             justify-content:center;
             background-color: #fffffff2;
-            /* ani */
+            animation: loadbg 0.1s;
+            animation: delay: 2.9s;
+            animation-fill-mode: both;
+            
         }
          /* loader */
         .containerloader .loader {
@@ -440,6 +532,8 @@ ul li {
             border-radius: 50%;
             width: 100px;
             height: 100px;
+            animation: spin 4s linear;
+            /* placement of loader in the middle of page */
             margin: auto;
             position: absolute;
             top: 0;
@@ -482,7 +576,7 @@ ul li {
     }
     @media (max-width: 425px) {
         html body {
-            font-family: Roboto, sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
         html body h2 {
             margin-left: 6%;
@@ -496,6 +590,9 @@ ul li {
             align-items: center;
             justify-content: center;
             background-color: #fffffff2;
+            animation: loadbg 0.1s;
+            animation-delay: 2.9s;
+            animation-fill-mode: both;
         }
         html body .containerloader .loader {
              /* Création du loader */
@@ -505,6 +602,7 @@ ul li {
             border-radius: 50%;
             width: 100px;
             height: 100px;
+            animation: spin 4s linear;
             /* placement du loader au milieu de la page */
             margin: auto;
             position: absolute;
@@ -583,7 +681,7 @@ ul li {
             margin-right: 5%;
             margin-left: 5%;
             margin-bottom: 6%;
-            box-shadow: 00.25rem 0.25rem 0.50rem gray;
+            box-shadow: 0.25rem 0.25rem 0.50rem gray;
             position: relative;
             z-index: 0;
         }
@@ -617,6 +715,38 @@ ul li {
             color: black;
 
         }
+        /* heart animation */
+        .restaurants .bloccarte .bloctxtmain .txtimg {
+            line-height: 0.5em;
+            margin-left: 3%;
+        }
+        .restaurants .bloccarte .bloctxtmain .heart {
+            font-size: 1.5em;
+            margin-right: 6%;
+        }
+        .restaurants .bloccarte .bloctxtmain .heart .coeurvide {
+            transition: 0.7s;
+            position: relative;
+            z-index: 2;
+        }
+        .restaurants .bloccarte .bloctxtmain .heart .coeurplein {
+            right: 6.5%;
+        }
+        .restaurants .bloccarte .bloctxtmain .heart input:checked ~ .coeurplein {
+            opacity: 1;
+            transition: 0.7s; 
+               /*ON DEFINI UN BACKGROUND*/
+            background: -webkit-linear-gradient(#FF79DA, #9356DC);
+            /*ON MET LE BACKGROUND SUR LE TEXTE*/
+            -webkit-background-clip: text;
+            /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+            -webkit-text-fill-color: transparent;
+        } 
+        .restaurants .bloccarte .bloctxtmain .heart input:checked ~ .coeurvide {
+            transition: 0.7s;
+            opacity: 0;
+        }
+
         input {
             width: 15px;
             height: 15px;
@@ -626,8 +756,8 @@ ul li {
             align-items: center;
             justify-content: space-evenly;
             flex-direction: row;
-            flex-wrap: wrap;
-            margin-right: 15px;
+            flex-wrap: wrap; 
+            margin-right: 15%;
         }
         img {
             width: 100%;
@@ -665,6 +795,17 @@ ul li {
             right: 37%;
             z-index: 2;
           }
+          /*Animation comfirmation*/
+            .containermenu:hover .confirmation {
+                margin: 0rem;
+                transition: 0.5s;
+            }
+
+            .containermenu:hover i {
+                transform: rotate(-360deg);
+                transition: 0.5s;
+            }
+
         .confirmation {
             width: 35%;
             border-radius: 0px 20px 20px 0px;
@@ -729,10 +870,43 @@ ul li {
            display: flex;
            justify-content: flex-end;
        }
-       .logo {
-           height: 100px;
-           width: 100px;
-       }
-
-
+       .delay-0 {
+        animation-delay: 0s;
+      }
+    
+      .delay-1 {
+        animation-delay: 1s;
+      }
+    
+      .delay-2 {
+        animation-delay: 2s;
+      }
+    
+      .delay-3 {
+        animation-delay: 3s;
+      }
+    
+      .delay-4 {
+        animation-delay: 4s;
+      }
+    
+      .delay-5 {
+        animation-delay: 5s;
+      }
+    
+      .delay-6 {
+        animation-delay: 6s;
+      }
+    
+      .delay-7 {
+        animation-delay: 7s;
+      }
+    
+      .delay-8 {
+        animation-delay: 8s;
+      }
+    
+      .delay-9 {
+        animation-delay: 9s;
+      }
     }
