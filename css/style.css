@@ -95,7 +95,7 @@ ul li {
             font-size: 1.2em;
         }
     }
-    @media(max-width: 425px) {
+    @media (max-width: 425px) {
         .btn {
             width: 85%;
             padding: 5%;
@@ -137,7 +137,7 @@ ul li {
             z-index: -1;
         }
     }
-        /* Animation du loader */
+        /* Animation of the  loader */
     @keyframes spin {
         0% {
         transform: rotate(0deg);
@@ -164,13 +164,11 @@ ul li {
             font-family: 'Roboto', sans-serif;
         } 
         html body h1 {
-            font-family: 'Shrikhand', cursive;
+            font-family: "Shrikhand", cursive;
             display: flex;
             justify-content: center;
         }
-        html body h2 {
-            margin-left 5%; 
-        }
+       
         html body .containerloader {
             position: fixed;
             z-index: 3;
@@ -520,7 +518,7 @@ ul li {
             justify-content:center;
             background-color: #fffffff2;
             animation: loadbg 0.1s;
-            animation: delay: 2.9s;
+            animation-delay:  2.9s;
             animation-fill-mode: both;
             
         }
