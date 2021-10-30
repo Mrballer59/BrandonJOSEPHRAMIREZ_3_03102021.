@@ -127,6 +127,7 @@
             background: linear-gradient(#ff93e1, #a16be0);
             box-shadow: 00.25rem 0.25rem 10px black;
         }
+
         }
 
         /*Animation of the loader*/
@@ -274,7 +275,7 @@
              position: relative;
              z-index: 0;
          }
-         .restaurants .bloccarte .news {
+         .restaurants  .bloccarte  .news {
              position: absolute;
              top: 5%;
              right: 4%;
