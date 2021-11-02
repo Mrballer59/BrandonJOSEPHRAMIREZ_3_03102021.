@@ -171,6 +171,7 @@
         }
         html body h2 {
             margin-left: 5%;
+            text-align: center;
         }
        
         html body .containerloader {
@@ -362,12 +363,11 @@
 
           img {
               width: 100%;
-              height: 1000px;
+              height: 24rem;
               object-fit: cover;
           }
           .containerpalettegout {
               background-color: #f6f6f6;
-              margin-top: -35%;
               padding-bottom: 5%;
               position: relative;
               border-radius: 35px 35px 0px 0px;
@@ -451,7 +451,7 @@
              background-color: #fff;
              border-radius: 20px;
              box-shadow: 0.25rem 0.25rem 0.5rem grey;
-             width: 60%;
+             width: 24rem;
              margin-left: 5%;
              margin-bottom: 5%;
              opacity: 0;
@@ -467,7 +467,7 @@
              width: 80%;
          }
          .containermenu .prix {
-             margin-left: 15rem;
+             
              margin-top: 0;
              width: 20%;
          }
