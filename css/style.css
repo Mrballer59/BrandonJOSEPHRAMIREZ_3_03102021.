@@ -163,8 +163,9 @@
     @media (max-width: 2560px) {
         html body {
             font-family: 'Roboto', sans-serif;
+            margin:0;padding:0
         } 
-        html body h1 {
+        html body h1 { 
             font-family: "Shrikhand", cursive;
             display: flex;
             justify-content: center;
@@ -370,11 +371,11 @@
               background-color: #f6f6f6;
               padding-bottom: 5%;
               position: relative;
-              border-radius: 35px 35px 0px 0px;
-              box-shadow: 0.25rem 0.25rem 10px #3535358a;
-              opacity: 0.9;
-              width: 80%;
-              margin-left: 10%;
+              border-radius: 25px 25px 0px 0px;
+              box-shadow: 0.15rem 0.15rem 10px #3535358a;
+              opacity: 1;
+              width: 100%;
+             
           }
           .containerpalettegout .TitreMenuPalette {
               display: flex;
